@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de contacto</title>
+    <style>
+       body{
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background: linear-gradient(135deg, #f062f5, #7105ff);
+           color: black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+       }
+       .form-container{
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+       }
+       .form-container h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        color: #7104ff;
+       }
+       .form-group{
+        margin-bottom: 15px;
+       }
+       .form-group label {
+        display:block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #020202;
+       }
+       .form-group input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s;
+       }
+       .form-group input:focus{
+        border-color: #faf7fd;
+       }
+       .form-group button{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: #4304a1;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+       }
+       .form-group button:hover{
+        background: #7807e9;
+       }
+       .form-group small{
+        display: block;
+        margin-top: 10px;
+        font-size: 0.875rem;
+        color:#777;
+
+       }
+    </style>
+</head>
+<body>
+    <div clas="form-container"> 
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <form action="">
+           <div class="form-group">
+               <label for="Nombre">Nombre:</label>
+               <input type="text" id= nombre name= "nombre" placeholder="Escriba su nombre aquí">
+           </div>
+              <div class="form-group">
+                <label form=""> Correo electrónico:</label>
+                <input type="email" id="correo" name= "mensaje" placeholder="Ingrese su correo electrónico"> 
+              </div>
+                   <div class="form-group">
+                <label for="">Mensaje:</label>
+                <input type="text" id="mensaje" name="mensaje" placeholder="Escriba su mensaje">
+              </div>
+                     <div class="form-group">
+                        <button type="submit">ENVIAR</button>
+                     </div>
+            <SMAll>SU INFORMACIÓN ES CONFIDENCIAL</SMAll>
+        </form>
+    </div>
+</body>
+</html>
